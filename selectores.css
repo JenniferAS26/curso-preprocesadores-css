@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.selectores {
+    display: flex;
+}
+
+.selectores > div {
+    width: 170px;
+    height: 170px;
+}
+
+.anidado { background-color: #DBF1FF; }
+.sid { background-color: #C7C7AC;}
+.sclase { background-color: #FBCEAD; }
+.hijos { background-color: #E0CCCC; }
+.adyacente { background-color: #E1F5C8; }
+.atributos { background-color: #F2C2CF; }
+
+.anidado span { color: black; }
+.anidado p { color: red; }
+
+.sid p { color: blue; }
+.sid #idVerde { color: green; }
+
+.sclase p { color: black; }
+.sclase .claseVerde { color: green; }
+
+.hijos p > span { color: red; }
+.hijos span { color: green; }
+
+.adyacente h2 { color: black; }
+.adyacente h2 + h2 { color: red; }
+
+.input[type='number'] {
+    border: solid 1px black;
+    width: 150px;
+    height: 50px;
+    margin-bottom:10px ;
+}
+.atributos input[type='email'] {
+    border: solid 1px red;
+    width: 150px;
+    height: 50px;
+}

@@ -1,0 +1,18 @@
+extend ./componentes/plantilla.pug
+block contenidos
+		section.intro
+			.intro__imagen: img(src="./images/imagen.png", alt="")
+			.intro__contenido
+				h2 #{titulos[0]}
+				p
+					|Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					|Aliquam odio facilis quaerat iste aperiam voluptatum ex
+					|consequatur amet cum autem, quia nam sed labore obcaecati
+					|porro esse veritatis quo? Sit! iste aperiam voluptatum ex
+					|consequatur amet cum autem,
+					span quia nam sed labore obcaecati porro esse veritatis quiste aperiam voluptatum exonsequatur amet cum
+				a.boton Leer más
+		main.contenido
+			+caja('imagen.png',titulos[1],'Lorem ipsum dolor sit amet consectetur adipisicing elit')
+			+caja('imagen.png',titulos[2],'Aliquam odio facilis quaerat iste aperiam voluptatum ex')
+			+caja('imagen.png',titulos[3],'consequatur amet cum autem, quia nam sed labore obcaecati')
